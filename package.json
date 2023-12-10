@@ -1,27 +1,41 @@
-{        
-    "name": "fxpw-theme",
-	"displayName": "fxpw theme",
+{
+	"name": "vscode-fxpw-theme",
+	"displayName": "vscode-fxpw-theme",
 	"description": "theme for vs code",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-	"license": "MIT",
-    "publisher": "fxpw",
+	"publisher": "fxpw",
+	"version": "1.0.0",
+	"icon": "images/icon.jpg",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
 	"categories": [
 		"Themes"
 	],
+	"main": "./extension.js",
+	"activationEvents":[
+		"onStartupFinished"
+	],
 	"contributes": {
-        "themes": [
-            {
-                "label": "fxpw dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/fxpw_dark.json"
-            }
-        ]
-    },
+		"themes": [
+			{
+				"label": "fxpw dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fxpw_dark.json"
+			}
+		]
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/fxpw/vscode-fxpw-theme"
+		"url": "https://github.com/fxpw/vscode-fxpw-theme.git"
+	},
+
+	"devDependencies": {
+		"@types/vscode": "^1.85.0",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "18.x",
+		"eslint": "^8.54.0",
+		"typescript": "^5.3.2",
+		"@vscode/test-cli": "^0.0.4",
+		"@vscode/test-electron": "^2.3.8"
 	}
 }

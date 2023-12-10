@@ -1,3 +1,4 @@
 .vscode
 tools
-tests
+test
+node_modules

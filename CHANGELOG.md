@@ -1,4 +1,9 @@
+# Change Log
 
-## 1.0.0
+All notable changes to the "vscode-fxpw-theme" extension will be documented in this file.
 
-Initial release.
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
+## [Unreleased]
+
+- Initial release
