@@ -14,10 +14,14 @@
 	"contributes": {
         "themes": [
             {
-                "label": "Theme label",
+                "label": "fxpw dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/fxpw_theme_dark.json"
+                "path": "./themes/fxpw_dark.json"
             }
         ]
-    }
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fxpw/vscode-fxpw-theme"
+	}
 }

@@ -1,0 +1,187 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"name": "fxpw dark",
+	"colors": {
+		"checkbox.border": "#6B6B6B",
+		"editor.background": "#1E1E1E",
+		"editor.foreground": "#D4D4D4",
+		"editor.inactiveSelectionBackground": "#3A3D41",
+		"editorIndentGuide.background1": "#404040",
+		"editorIndentGuide.activeBackground1": "#707070",
+		"editor.selectionHighlightBackground": "#ADD6FF26",
+		"list.dropBackground": "#383B3D",
+		"activityBarBadge.background": "#007ACC",
+		"sideBarTitle.foreground": "#BBBBBB",
+		"input.placeholderForeground": "#A6A6A6",
+		"menu.background": "#252526",
+		"menu.foreground": "#CCCCCC",
+		"menu.separatorBackground": "#454545",
+		"menu.border": "#454545",
+		"statusBarItem.remoteForeground": "#FFF",
+		"statusBarItem.remoteBackground": "#16825D",
+		"ports.iconRunningProcessForeground": "#369432",
+		"sideBarSectionHeader.background": "#0000",
+		"sideBarSectionHeader.border": "#ccc3",
+		"tab.lastPinnedBorder": "#ccc3",
+		"list.activeSelectionIconForeground": "#FFF",
+		"terminal.inactiveSelectionBackground": "#3A3D41",
+		"widget.border": "#303031",
+		"actionBar.toggledBackground": "#383a49"
+	},
+	"semanticHighlighting": true,
+
+	"semanticTokenColors":{
+		"module": "#ffa200",
+		"builtinConstant": "#b950d6",
+		"magicFunction": {
+			// "foreground": "#bf79c3",
+			"bold": true
+			// "italic": true
+		},
+
+	},
+	// textmate
+	"tokenColors": [
+		// Comments -- just add italics to the current style
+		{
+			"scope": "comment", // комментарий
+			"settings": {
+				"foreground": "#317b1e",
+				"fontStyle": "bold",
+			}
+		},
+		{
+			"scope": "invalid", // при ошибке 
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function", //название функции
+			], 
+			"settings": {
+				"foreground": "#f2e986"
+			}
+		},
+		{
+			"name": "this.self", // self в функции
+			"scope": [
+				"variable.language",
+				"variable.parameter.function.language.special.self",
+			],
+			"settings": {
+				"foreground": "#569cd6",
+				"fontStyle": "bold"
+			}
+		},
+		// variable
+		{
+			"scope": "variable.parameter", // параметры приходяшие в функцию
+			"settings": {
+				"foreground": "#6ccae3"
+			}
+		},
+		{
+			"scope": "variable.other", // все переменные
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#1efd7fe4"
+			}
+		},
+		{
+			"scope": "variable.other.property", // конечный
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#2b75ff"
+			}
+		},
+		// constants
+		{
+			"scope": "constant.numeric", // цифры
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#00ff00"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.class",
+				"storage.type.function",
+				"storage.type.built-in.primitive",
+				"keyword",
+				"storage.type.class",
+				"storage.type.function",
+				"storage.type.built-in.primitive",
+				// "constant",
+			],
+			// "scope": "keyword", // зарезервираваные
+			"settings": {
+				"foreground": "#b950d6",
+				"fontStyle": "bold"
+			}
+		},
+		///
+		{
+			"scope": [
+				"variable.other.env", //env variable
+				"keyword.other.definition.ini" //ini variable
+			],
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.type", // классы
+			],
+			"settings": {
+				"foreground": "#4EC9B0",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"string", // первая вложенность
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"scope": [
+				"string.quoted.double", // вторая вложенность
+			],
+			"settings": {
+				"foreground": "#37d297",
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.decorator",
+			],
+			"settings": {
+				"foreground": "#ffe605",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.string",
+			],
+			"settings": {
+				"foreground": "#ff00d4",
+				// "fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.separator.annotation",
+			],
+			"settings": {
+				"foreground": "#ff00d4",
+				"fontStyle": "bold"
+			}
+		},
+	]
+}
