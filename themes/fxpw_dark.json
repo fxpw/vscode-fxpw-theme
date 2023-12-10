@@ -125,8 +125,7 @@
 		"widget.border": "#313131"
 	},
 	"semanticHighlighting": true,
-
-	"semanticTokenColors":{
+	"semanticTokenColors": {
 		"module": "#ffa200",
 		"builtinConstant": "#b950d6",
 		"magicFunction": {
@@ -134,7 +133,6 @@
 			"bold": true
 			// "italic": true
 		},
-
 	},
 	// textmate
 	"tokenColors": [
@@ -155,7 +153,7 @@
 		{
 			"scope": [
 				"entity.name.function", //название функции
-			], 
+			],
 			"settings": {
 				"foreground": "#f2e986"
 			}
@@ -209,6 +207,7 @@
 				"storage.type.class",
 				"storage.type.function",
 				"storage.type.built-in.primitive",
+				"punctuation.separator.continuation.line",
 				// "constant",
 			],
 			// "scope": "keyword", // зарезервираваные
@@ -254,7 +253,7 @@
 		},
 		{
 			"scope": [
-				"punctuation.definition.decorator",
+				"punctuation.definition.decorator", // декоратор
 			],
 			"settings": {
 				"foreground": "#ffe605",
@@ -263,7 +262,7 @@
 		},
 		{
 			"scope": [
-				"storage.type.string",
+				"storage.type.string", // f string
 			],
 			"settings": {
 				"foreground": "#ff00d4",
@@ -272,11 +271,40 @@
 		},
 		{
 			"scope": [
-				"punctuation.separator.annotation",
+				"punctuation.separator.annotation", // ->
 			],
 			"settings": {
 				"foreground": "#ff00d4",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "constant.character.escape", //"\n"
+			"settings": {
+				"foreground": "#f6ff00"
+			}
+		},
+		{
+			"scope": "constant.character.format", // "{}"
+			"settings": {
+				"foreground": "#e44141"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.string.end",
+				"punctuation.definition.string.begin"
+			], // 
+			"settings": {
+				"foreground": "#ffffff",
+				"fontStyle": "bold"
+				
+			}
+		},
+		{
+			"scope": "support.type.property-name", //
+			"settings": {
+				"foreground": "#f6f875"
 			}
 		},
 	]

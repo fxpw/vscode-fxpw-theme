@@ -3,7 +3,7 @@
 	"displayName": "vscode-fxpw-theme",
 	"description": "theme for vs code",
 	"publisher": "fxpw",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"icon": "images/icon.jpg",
 	"engines": {
 		"vscode": "^1.85.0"

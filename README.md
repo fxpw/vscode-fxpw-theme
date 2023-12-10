@@ -1,6 +1,6 @@
 # fxpw-theme README
 
-test
+theme for vs code
 
 ## Features
 
@@ -18,9 +18,16 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.2
+
+add features
+
+### 1.0.1
+
+test build
+
 ### 1.0.0
 
 Initial release
-
 
 # **Enjoy!**
