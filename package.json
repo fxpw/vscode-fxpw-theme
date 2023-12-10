@@ -1,0 +1,23 @@
+{        
+    "name": "fxpw-theme",
+	"displayName": "fxpw theme",
+	"description": "theme for vs code",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+	"license": "MIT",
+    "publisher": "fxpw",
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+        "themes": [
+            {
+                "label": "Theme label",
+                "uiTheme": "vs-dark",
+                "path": "./themes/fxpw_theme_dark.json"
+            }
+        ]
+    }
+}
