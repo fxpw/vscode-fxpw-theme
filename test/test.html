@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test HTML Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		.header {
+			color: blue;
+		}
+
+		.content {
+			margin-top: 20px;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgb(208, 19, 19);
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="header">Welcome to My Test Page</h1>
+
+	<p>This is a paragraph in the HTML document.</p>
+
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+	</ul>
+
+	<div class="content">
+		<form action="/submit-form" method="post">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="age">Age:</label><br>
+			<input type="number" id="age" name="age" min="0"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<table>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+		</tr>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+			<td>Data 3</td>
+		</tr>
+		<tr>
+			<td>More Data 1</td>
+			<td>More Data 2</td>
+			<td>More Data 3</td>
+		</tr>
+	</table>
+
+	<script>
+		document.getElementById("name").addEventListener("input", function (event) {
+			console.log("Name entered:", event.target.value);
+		});
+	</script>
+</body>
+
+</html>

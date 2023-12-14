@@ -3,7 +3,7 @@
 	"displayName": "vscode-fxpw-theme",
 	"description": "theme for vs code",
 	"publisher": "fxpw",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"icon": "images/icon.jpg",
 	"engines": {
 		"vscode": "^1.85.0"
@@ -18,7 +18,7 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "fxpw dark",
+				"label": "fxpw Dark Modern",
 				"uiTheme": "vs-dark",
 				"path": "./themes/fxpw_dark.json"
 			}

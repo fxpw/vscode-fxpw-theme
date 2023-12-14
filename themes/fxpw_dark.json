@@ -128,71 +128,128 @@
 	"semanticTokenColors": {
 		"module": "#ffa200",
 		"builtinConstant": "#b950d6",
+
 		"magicFunction": {
 			// "foreground": "#bf79c3",
 			"bold": true
 			// "italic": true
 		},
 	},
-	// textmate
 	"tokenColors": [
-		// Comments -- just add italics to the current style
-		{
-			"scope": "comment", // комментарий
+		{ // comment
+			"scope": [
+				"punctuation.definition.comment.python",
+				"comment.line.number-sign.python",
+				"comment.line.double-slash.js",
+				"comment.line.double-slash.cpp",
+				"comment.block.css",
+				"comment.line.double-dash.lua",
+				"comment.block.lua",
+			],
 			"settings": {
 				"foreground": "#317b1e",
 				"fontStyle": "bold",
 			}
 		},
-		{
-			"scope": "invalid", // при ошибке 
+		{ // include
+			"scope": [
+				"meta.preprocessor.include.cpp",
+				"entity.name.scope-resolution.cpp",
+				"entity.name.scope-resolution.parameter.cpp",
+			],
 			"settings": {
-				"foreground": "#ff0000"
+				"foreground": "#ffa200",
+				"fontStyle": "bold",
 			}
 		},
-		{
+		
+		{ //name of function
 			"scope": [
-				"entity.name.function", //название функции
+				"entity.name.function.python",
+				"entity.name.function.js",
+				"entity.name.function.definition.cpp",
+				"entity.name.function.call.cpp",
+				"entity.name.function.member.cpp",
+				"support.function.transform.css",
+				"meta.property-value.css",
+				"variable.parameter.keyframe-list.css",
+				"entity.name.function.lua",
+				"support.function.any-method.lua",
 			],
 			"settings": {
 				"foreground": "#f2e986"
 			}
 		},
-		{
-			"name": "this.self", // self в функции
+		{ // self in functions
+			"name": "this.self",
 			"scope": [
-				"variable.language",
-				"variable.parameter.function.language.special.self",
+				"variable.language.python",
+				"variable.parameter.function.language.special.self.python",
+				"variable.language.this.js",
 			],
 			"settings": {
 				"foreground": "#569cd6",
 				"fontStyle": "bold"
 			}
 		},
-		// variable
-		{
-			"scope": "variable.parameter", // параметры приходяшие в функцию
+		{ // parametres in func
+			"scope": [
+				"variable.parameter.function.language.python",
+				"variable.parameter.js",
+				"variable.parameter.cpp",
+				"support.type.property-name.media.css",
+				"variable.parameter",
+			],
 			"settings": {
-				"foreground": "#6ccae3"
+				"foreground": "#139dc4",
+				"fontStyle": ""
 			}
 		},
-		{
-			"scope": "variable.other", // все переменные
+		{ // parametres in func cpp
+			"scope": [
+				"variable.parameter.cpp",
+			],
+			"settings": {
+				"foreground": "#69a8ba",
+				"fontStyle": ""
+			}
+		},
+		{ // all variables
+			"scope": [
+				"variable.other",
+				"meta.body.function.definition.cpp",
+				"entity.other.attribute-name.html",
+				"entity.other.attribute-name.pseudo-element.css",
+				"variable.css",
+			],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#1efd7fe4"
 			}
 		},
-		{
-			"scope": "variable.other.property", // конечный
+		{ // last parameter
+			"scope": "variable.other.property.python",
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#2b75ff"
 			}
 		},
-		// constants
-		{
-			"scope": "constant.numeric", // цифры
+		{ //global lua 
+			"scope": "variable.global.lua",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#2b75ff"
+			}
+		},
+		{ // numeric
+			"scope": [
+				"constant.numeric.float",
+				"constant.numeric.dec",
+				"constant.numeric.decimal.js",
+				"constant.numeric.decimal.cpp",
+				"constant.numeric.float.cpp",
+				"constant.numeric.css",
+			],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#00ff00"
@@ -201,16 +258,41 @@
 		{
 			"scope": [
 				"storage.type.class",
-				"storage.type.function",
-				"storage.type.built-in.primitive",
+				"storage.type.function.python",
+				"storage.type.built-in.primitive.python",
 				"keyword",
-				"storage.type.class",
-				"storage.type.function",
-				"storage.type.built-in.primitive",
-				"punctuation.separator.continuation.line",
-				// "constant",
+				"storage.type.class.python",
+				"storage.type.function.python",
+				"punctuation.separator.continuation.line.python",
+				"meta.function-call.python",
+				"keyword.control.flow.python",
+				"storage.type.function.async.python",
+				"storage.type.js",
+				"storage.modifier.async.js",
+				"storage.type.function.js",
+				"constant.language.boolean.true.js",
+				"constant.language.boolean.false.js",
+				"constant.language.null.js",
+				"constant.language.undefined.js",
+				"punctuation.separator.comma.js",
+				// "punctuation.accessor.js",
+				"storage.type.modifier.access.public.cpp",
+				"storage.type.modifier.access.control.public.cpp",
+				"storage.type.modifier.access.control.private.cpp",
+				"storage.modifier.specifier.const.cpp",
+				"storage.modifier.virtual.cpp",
+				"storage.modifier.specifier.functional.post-parameters.const.cpp",
+				"storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
+				"storage.modifier.specifier.functional.post-parameters.override.cpp",
+				"storage.modifier.specifier.functional.pre-parameters.override.cpp",
+				"storage.type.template.cpp",
+				"storage.type.template.argument.typename.cpp",
+				"punctuation.separator.key-value.html",
+				"entity.other.keyframe-offset.css",
+				"punctuation.separator.list.comma.css",
+				"support.function.lua",
+				
 			],
-			// "scope": "keyword", // зарезервираваные
 			"settings": {
 				"foreground": "#b950d6",
 				"fontStyle": "bold"
@@ -220,15 +302,40 @@
 		{
 			"scope": [
 				"variable.other.env", //env variable
-				"keyword.other.definition.ini" //ini variable
+				"keyword.other.definition.ini", //ini variable
+				"punctuation.terminator.statement.js", //; in js
+				"punctuation.terminator.statement.cpp", //; in cpp
+				"entity.name.function.definition.special.constructor.cpp", //; in cpp
+				"entity.name.function.definition.special.member.destructor.cpp", //; in cpp
+				"punctuation.terminator.rule.css", //; in css
 			],
 			"settings": {
 				"foreground": "#ff0000"
 			}
 		},
-		{
+		{ // classes
 			"scope": [
-				"entity.name.type", // классы
+				// "punctuation.section.class.begin.python", 
+				"entity.name.type.class.python",
+				"entity.name.type.class.js",
+				"source.python",
+				"source.html",
+				"source.js",
+				"source.cpp",
+				"function.lua",
+				"source.lua",
+				"variable.other.object.js",
+				"entity.name.type.class.cpp",
+				"entity.name.type.cpp",
+				"storage.type.built-in.primitive.cpp", //primitive but like class
+				"support.constant.property-value.css",
+				"support.constant.color.w3c-standard-color-name.css",
+				"support.function.misc.css",
+				"support.constant.font-name.css",
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.pseudo-class.css",
+				"entity.name.method.lua",
+				
 			],
 			"settings": {
 				"foreground": "#4EC9B0",
@@ -237,7 +344,11 @@
 		},
 		{
 			"scope": [
-				"string", // первая вложенность
+				"support.type.property-name.json", // первая вложенность
+				"support.type.property-name.css", // первая вложенность
+				"string.quoted.single.python", // вторая вложенность
+				"string.quoted.single.js", // вторая вложенность
+				"string.template.js", // вторая вложенность
 			],
 			"settings": {
 				"foreground": "#ffffff"
@@ -245,67 +356,127 @@
 		},
 		{
 			"scope": [
-				"string.quoted.double", // вторая вложенность
+				"string.quoted.double.json", // вторая вложенность
+				"string.quoted.double.python", // вторая вложенность
 			],
 			"settings": {
 				"foreground": "#37d297",
 			}
 		},
-		{
+		{ // decoratos
 			"scope": [
-				"punctuation.definition.decorator", // декоратор
+				"punctuation.definition.decorator.python",
 			],
 			"settings": {
 				"foreground": "#ffe605",
 				"fontStyle": "bold"
 			}
 		},
-		{
+		{ // f string
 			"scope": [
-				"storage.type.string", // f string
+				"storage.type.string.python",
+				"constant.character.format.placeholder.other.python",
+				// "meta.fstring.python",
 			],
 			"settings": {
 				"foreground": "#ff00d4",
 				// "fontStyle": "bold"
 			}
 		},
-		{
+		{ // ->
 			"scope": [
-				"punctuation.separator.annotation", // ->
+				"punctuation.separator.annotation",
 			],
 			"settings": {
 				"foreground": "#ff00d4",
 				"fontStyle": "bold"
 			}
 		},
-		{
-			"scope": "constant.character.escape", //"\n"
+		{ //"\n"
+			"scope": "constant.character.escape",
 			"settings": {
 				"foreground": "#f6ff00"
 			}
 		},
-		{
-			"scope": "constant.character.format", // "{}"
+		{ // "{}"
+			"scope": "constant.character.format",
 			"settings": {
 				"foreground": "#e44141"
 			}
 		},
-		{
+		{ // begin adn end string
 			"scope": [
-				"punctuation.definition.string.end",
-				"punctuation.definition.string.begin"
+				"punctuation.definition.string.end.python",
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.js",
+				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.template.begin.js",
+				"punctuation.definition.string.template.end.js",
+				"string.quoted.double.js",
+				"string.quoted.double.cpp",
+				"string.quoted.double.html",
+				"string.quoted.double.lua",
+				// "punctuation.accessor.js",
 			], // 
 			"settings": {
 				"foreground": "#ffffff",
 				"fontStyle": "bold"
-				
+			}
+		},
+		{ // errors
+			"scope": [
+				"invalid.python",
+				// "support.type.exception.python"
+			],
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
+		{ //html tags + .
+			"scope": [
+				"entity.name.tag.html",
+				"punctuation.definition.entity.css"
+			],
+			"settings": {
+				"foreground": "#ffb700"
+			}
+		},
+		{// text in html
+			"scope": [
+				"text.html.derivative",
+			],
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
+		{ // tagname css
+			"scope": [
+				"entity.name.tag.css",
+				"entity.other.attribute-name.class.css",
+			],
+			"settings": {
+				"foreground": "#00fff2"
 			}
 		},
 		{
-			"scope": "support.type.property-name", //
+			"scope": [
+				"punctuation.definition.tag.end.html",
+				"punctuation.definition.tag.begin.html",
+			],
 			"settings": {
-				"foreground": "#f6f875"
+				"foreground": "#00fff2"
 			}
 		},
+
+		// { // constants js
+		// 	"scope": [
+		// 		"variable.other.constant.js",
+		// 		// "support.type.exception.python"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#ff7b00",
+				
+		// 	}
+		// },
 	]
 }

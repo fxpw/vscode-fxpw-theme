@@ -1,0 +1,107 @@
+/* Основные стили элементов */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: navy;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Стили классов */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили идентификаторов */
+#header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Псевдоклассы и псевдоэлементы */
+a:hover,
+button:hover {
+    opacity: 0.8;
+}
+
+li::before {
+    content: '-';
+    margin-right: 8px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Анимации */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-element {
+    animation: slideIn 1s ease-out;
+}
+
+/* Переменные */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #008c7a;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+

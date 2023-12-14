@@ -1,5 +1,5 @@
 .vscode
 tools
-test
+# test
 node_modules
 *.vsix
