@@ -2,7 +2,7 @@
 
 Theme for vs code
 
-supported languages:
+supported files and languages:
 
 * cpp
 * js
@@ -10,6 +10,9 @@ supported languages:
 * html
 * python
 * lua
+* Dockerfile
+* ini
+* Makefile
 
 # Examples
 

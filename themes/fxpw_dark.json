@@ -128,7 +128,6 @@
 	"semanticTokenColors": {
 		"module": "#ffa200",
 		"builtinConstant": "#b950d6",
-
 		"magicFunction": {
 			// "foreground": "#bf79c3",
 			"bold": true
@@ -145,6 +144,9 @@
 				"comment.block.css",
 				"comment.line.double-dash.lua",
 				"comment.block.lua",
+				"comment.line.number-sign.ini",
+				"comment.line.number-sign.dockerfile",
+				"comment.line.number-sign.makefile",
 			],
 			"settings": {
 				"foreground": "#317b1e",
@@ -156,13 +158,13 @@
 				"meta.preprocessor.include.cpp",
 				"entity.name.scope-resolution.cpp",
 				"entity.name.scope-resolution.parameter.cpp",
+				"entity.name.section.group-title.ini", //
 			],
 			"settings": {
 				"foreground": "#ffa200",
 				"fontStyle": "bold",
 			}
 		},
-		
 		{ //name of function
 			"scope": [
 				"entity.name.function.python",
@@ -175,6 +177,7 @@
 				"variable.parameter.keyframe-list.css",
 				"entity.name.function.lua",
 				"support.function.any-method.lua",
+				"meta.scope.function-call.makefile",
 			],
 			"settings": {
 				"foreground": "#f2e986"
@@ -235,10 +238,13 @@
 			}
 		},
 		{ //global lua 
-			"scope": "variable.global.lua",
+			"scope": [
+				"variable.global.lua",
+				"meta.scope.prerequisites.makefile",
+			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#2b75ff"
+				"foreground": "#2b75ff",
 			}
 		},
 		{ // numeric
@@ -291,7 +297,10 @@
 				"entity.other.keyframe-offset.css",
 				"punctuation.separator.list.comma.css",
 				"support.function.lua",
-				
+				"punctuation.separator.key-value.ini",
+				"punctuation.separator.key-value.makefile",
+				"punctuation.definition.variable.makefile",
+				"variable.language.makefile",
 			],
 			"settings": {
 				"foreground": "#b950d6",
@@ -324,6 +333,7 @@
 				"source.cpp",
 				"function.lua",
 				"source.lua",
+				"source.makefile",
 				"variable.other.object.js",
 				"entity.name.type.class.cpp",
 				"entity.name.type.cpp",
@@ -335,7 +345,9 @@
 				"entity.other.attribute-name.id.css",
 				"entity.other.attribute-name.pseudo-class.css",
 				"entity.name.method.lua",
-				
+				"source.ini",
+				"entity.name.function.target.makefile",
+				"support.function.shell.makefile",
 			],
 			"settings": {
 				"foreground": "#4EC9B0",
@@ -349,6 +361,7 @@
 				"string.quoted.single.python", // вторая вложенность
 				"string.quoted.single.js", // вторая вложенность
 				"string.template.js", // вторая вложенность
+				"string.quoted.double.dockerfile", // вторая вложенность
 			],
 			"settings": {
 				"foreground": "#ffffff"
@@ -416,7 +429,7 @@
 				"string.quoted.double.cpp",
 				"string.quoted.double.html",
 				"string.quoted.double.lua",
-				// "punctuation.accessor.js",
+				"meta.scope.recipe.makefile",
 			], // 
 			"settings": {
 				"foreground": "#ffffff",
@@ -441,7 +454,7 @@
 				"foreground": "#ffb700"
 			}
 		},
-		{// text in html
+		{ // text in html
 			"scope": [
 				"text.html.derivative",
 			],
@@ -467,7 +480,6 @@
 				"foreground": "#00fff2"
 			}
 		},
-
 		// { // constants js
 		// 	"scope": [
 		// 		"variable.other.constant.js",
@@ -475,7 +487,6 @@
 		// 	],
 		// 	"settings": {
 		// 		"foreground": "#ff7b00",
-				
 		// 	}
 		// },
 	]
