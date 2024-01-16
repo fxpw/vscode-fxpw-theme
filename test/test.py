@@ -2,7 +2,7 @@
 import math
 import sys
 from aiogram import MagicFilter, Router, F
-from test_import import asfasfsaf
+from test_import import asfasfsaf, asdsad
 fasgweh3erh435y4ergds = Router()
 # Глобальная переменная
 PI = math.pi
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 	greeting = greet("Пользователь")
 	print(greeting)
 	b = 123
-	
+	asfasgfsa()
 
 # Обработка исключений
 try:

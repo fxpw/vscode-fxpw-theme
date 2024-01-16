@@ -270,7 +270,7 @@
 				"storage.type.class.python",
 				"storage.type.function.python",
 				"punctuation.separator.continuation.line.python",
-				"meta.function-call.python",
+				// "meta.function-call.python",
 				"keyword.control.flow.python",
 				"storage.type.function.async.python",
 				"storage.type.js",
@@ -371,6 +371,7 @@
 			"scope": [
 				"string.quoted.double.json", // вторая вложенность
 				"string.quoted.double.python", // вторая вложенность
+				"string.quoted.double.jinja", // вторая вложенность
 			],
 			"settings": {
 				"foreground": "#37d297",
@@ -454,12 +455,23 @@
 				"foreground": "#ffb700"
 			}
 		},
-		{ // text in html
+		{
 			"scope": [
 				"text.html.derivative",
+				"support.type.exception.python",
+				"text.html.jinja",
 			],
 			"settings": {
 				"foreground": "#ff0000"
+			}
+		},
+		{
+			"scope": [
+				"meta.function-call.generic.python",
+			],
+			"settings": {
+				"foreground": "#f2e986",
+				"fontStyle": "bold"
 			}
 		},
 		{ // tagname css

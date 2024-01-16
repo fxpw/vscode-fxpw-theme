@@ -42,7 +42,23 @@
 		<li>List item 2</li>
 		<li>List item 3</li>
 	</ul>
-
+	{% if courses_dict %}
+	<div class="courses_grid">
+		{% for k, v in courses_dict.items() %}
+		<div class="courses_item">
+			<img src= "{{v['fp']}}" alt="Product {{k|escape}}">
+			<h3>
+				{{ v["name"] }}
+			</h3>
+			<p>
+				{{v["desc"]}}
+			</p>
+		</div>
+		{% endfor %}
+	</div>
+	{% else %}
+		Данных нет
+	{% endif %}
 	<div class="content">
 		<form action="/submit-form" method="post">
 			<label for="name">Name:</label><br>
@@ -72,9 +88,11 @@
 	</table>
 
 	<script>
-		document.getElementById("name").addEventListener("input", function (event) {
-			console.log("Name entered:", event.target.value);
-		});
+		document.getElementById("name").addEventListener("input",
+			function (event) {
+				console.log("Name entered:", event.target.value);
+			}
+		);
 	</script>
 </body>
 
