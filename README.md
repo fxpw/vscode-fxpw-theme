@@ -13,6 +13,9 @@ supported files and languages:
 * Dockerfile
 * ini
 * Makefile
+* scss
+* yml
+* php
 
 # Examples
 
@@ -29,6 +32,10 @@ This extension contributes the following settings:
 * `myExtension.enable`: Enable/disable this extension.mething.
 
 ## Release Notes
+
+### 1.0.8
+
+add yml, php,css and scss support
 
 ### 1.0.7
 
