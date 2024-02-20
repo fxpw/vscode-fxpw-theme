@@ -150,6 +150,8 @@
 				"comment.block.php",
 				"comment.line.double-slash.php",
 				"comment.block.scss",
+				"comment.block.html",
+				"punctuation.definition.comment.php",
 				"comment.line.scss",
 			],
 			"settings": {
@@ -194,6 +196,7 @@
 				"variable.language.python",
 				"variable.parameter.function.language.special.self.python",
 				"variable.language.this.js",
+				"variable.language.this.php",
 			],
 			"settings": {
 				"foreground": "#569cd6",
@@ -254,6 +257,7 @@
 			"scope": [
 				"variable.global.lua",
 				"meta.scope.prerequisites.makefile",
+				"entity.other.attribute-name.namespace.xml",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -265,6 +269,7 @@
 				"constant.numeric.float",
 				"constant.numeric.dec",
 				"constant.numeric.decimal.js",
+				"constant.numeric.decimal.php",
 				"constant.numeric.decimal.cpp",
 				"constant.numeric.float.cpp",
 				"constant.numeric.css",
@@ -300,6 +305,7 @@
 				"storage.type.modifier.access.control.public.cpp",
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.modifier.specifier.const.cpp",
+				"storage.modifier.extends.php",
 				"storage.modifier.virtual.cpp",
 				"storage.modifier.specifier.functional.post-parameters.const.cpp",
 				"storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
@@ -383,6 +389,7 @@
 				"support.function.construct.php",
 				"support.class.php",
 				"entity.name.type.class.php",
+				"entity.other.inherited-class.php",
 				"source.yaml",
 			],
 			"settings": {
@@ -400,7 +407,8 @@
 				"string.template.js", // вторая вложенность
 				"string.quoted.double.dockerfile", // вторая вложенность
 				"string.quoted.single.yaml",
-				// "string.quoted.single.php",
+				"string.quoted.double.xml",
+				"string.quoted.single.scss",
 			],
 			"settings": {
 				"foreground": "#ffffff"
@@ -490,6 +498,7 @@
 		{ //html tags + .
 			"scope": [
 				"entity.name.tag.html",
+				"entity.name.tag.localname.xml",
 				"punctuation.definition.entity.css"
 			],
 			"settings": {
@@ -501,6 +510,7 @@
 				"text.html.derivative",
 				"support.type.exception.python",
 				"text.html.jinja",
+				"text.html.php",
 			],
 			"settings": {
 				"foreground": "#ff0000"
@@ -518,7 +528,10 @@
 		{ // tagname css
 			"scope": [
 				"entity.name.tag.css",
+				"entity.name.tag.xml",
 				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.xml",
+				"entity.other.attribute-name.localname.xml",
 			],
 			"settings": {
 				"foreground": "#00fff2"
@@ -527,7 +540,9 @@
 		{
 			"scope": [
 				"punctuation.definition.tag.end.html",
+				"punctuation.definition.tag.end.html",
 				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.xml",
 			],
 			"settings": {
 				"foreground": "#00fff2"
