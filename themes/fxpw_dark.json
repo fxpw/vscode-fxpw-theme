@@ -147,6 +147,7 @@
 				"comment.line.number-sign.ini",
 				"comment.line.number-sign.dockerfile",
 				"comment.line.number-sign.makefile",
+				"comment.line.number-sign.shell",
 				"comment.block.php",
 				"comment.line.double-slash.php",
 				"comment.block.scss",
@@ -185,6 +186,7 @@
 				"support.function.any-method.lua",
 				"meta.scope.function-call.makefile",
 				"entity.name.function.php",
+				"entity.name.command.shell",
 			],
 			"settings": {
 				"foreground": "#f2e986"
@@ -197,6 +199,7 @@
 				"variable.parameter.function.language.special.self.python",
 				"variable.language.this.js",
 				"variable.language.this.php",
+				"variable.language.special.shell",
 			],
 			"settings": {
 				"foreground": "#569cd6",
@@ -273,6 +276,7 @@
 				"constant.numeric.decimal.cpp",
 				"constant.numeric.float.cpp",
 				"constant.numeric.css",
+				"constant.numeric.integer.shell",
 				
 			],
 			"settings": {
@@ -307,6 +311,7 @@
 				"storage.modifier.specifier.const.cpp",
 				"storage.modifier.extends.php",
 				"storage.modifier.virtual.cpp",
+				"storage.modifier.export.shell",
 				"storage.modifier.specifier.functional.post-parameters.const.cpp",
 				"storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
 				"storage.modifier.specifier.functional.post-parameters.override.cpp",
@@ -320,17 +325,20 @@
 				"punctuation.separator.key-value.ini",
 				"punctuation.separator.key-value.makefile",
 				"punctuation.definition.variable.makefile",
+				"punctuation.definition.variable.shell",
 				"variable.language.makefile",
 				"storage.modifier.php",
 				"storage.type.php",
 				"storage.type.function.php",
 				"constant.language.php",
 				"support.function.funchand.php",
+				"support.function.builtin.shell",
 				"entity.name.tag.reference.scss",
 				"punctuation.definition.interpolation.begin.bracket.curly.scss",
 				"punctuation.terminator.rule.scss",
 				"meta.property-value.scss",
 				"punctuation.separator.key-value.scss",
+				"storage.type.function.shell",
 
 			],
 			"settings": {
@@ -408,7 +416,9 @@
 				"string.quoted.double.dockerfile", // вторая вложенность
 				"string.quoted.single.yaml",
 				"string.quoted.double.xml",
+				"string.quoted.double.shell",
 				"string.quoted.single.scss",
+				"string.unquoted.argument.shell",
 			],
 			"settings": {
 				"foreground": "#ffffff"
@@ -478,6 +488,7 @@
 				"string.quoted.double.html",
 				"string.quoted.double.lua",
 				"meta.scope.recipe.makefile",
+				"meta.scope.case-clause-body.shell",
 				"string.quoted.double.php",
 				"string.quoted.single.php",
 			], // 
