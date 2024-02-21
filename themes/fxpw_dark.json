@@ -140,6 +140,7 @@
 				"punctuation.definition.comment.python",
 				"comment.line.number-sign.python",
 				"comment.line.double-slash.js",
+				"comment.line.double-slash.ts",
 				"comment.line.double-slash.cpp",
 				"comment.block.css",
 				"comment.line.double-dash.lua",
@@ -154,6 +155,8 @@
 				"comment.block.html",
 				"punctuation.definition.comment.php",
 				"comment.line.scss",
+				"punctuation.definition.comment.ts",
+				"comment.block.documentation.ts",
 			],
 			"settings": {
 				"foreground": "#317b1e",
@@ -187,6 +190,7 @@
 				"meta.scope.function-call.makefile",
 				"entity.name.function.php",
 				"entity.name.command.shell",
+				"entity.name.function.ts",
 			],
 			"settings": {
 				"foreground": "#f2e986"
@@ -198,6 +202,7 @@
 				"variable.language.python",
 				"variable.parameter.function.language.special.self.python",
 				"variable.language.this.js",
+				"variable.language.this.ts",
 				"variable.language.this.php",
 				"variable.language.special.shell",
 			],
@@ -236,6 +241,7 @@
 				"entity.other.attribute-name.pseudo-element.css",
 				"variable.css",
 				"variable.scss",
+				"variable.object.property.ts",
 				"meta.attribute-selector.scss",
 				"support.constant.color.current.css",
 
@@ -274,6 +280,7 @@
 				"constant.numeric.decimal.js",
 				"constant.numeric.decimal.php",
 				"constant.numeric.decimal.cpp",
+				"constant.numeric.decimal.ts",
 				"constant.numeric.float.cpp",
 				"constant.numeric.css",
 				"constant.numeric.integer.shell",
@@ -288,6 +295,7 @@
 			"scope": [
 				"storage.type.class",
 				"storage.type.function.python",
+				"storage.type.function.ts",
 				"storage.type.built-in.primitive.python",
 				"keyword",
 				"storage.type.class.python",
@@ -297,6 +305,7 @@
 				"keyword.control.flow.python",
 				"storage.type.function.async.python",
 				"storage.type.js",
+				"storage.type.ts",
 				"storage.modifier.async.js",
 				"storage.type.function.js",
 				"constant.language.boolean.true.js",
@@ -328,6 +337,7 @@
 				"punctuation.definition.variable.shell",
 				"variable.language.makefile",
 				"storage.modifier.php",
+				"storage.modifier.ts",
 				"storage.type.php",
 				"storage.type.function.php",
 				"constant.language.php",
@@ -339,6 +349,11 @@
 				"meta.property-value.scss",
 				"punctuation.separator.key-value.scss",
 				"storage.type.function.shell",
+				"storage.type.interface.ts",
+				"storage.type.enum.ts",
+				"support.type.primitive.ts",
+				"support.type.builtin.ts",
+				"storage.type.namespace.ts",
 
 			],
 			"settings": {
@@ -352,15 +367,19 @@
 				"variable.other.env", //env variable
 				"keyword.other.definition.ini", //ini variable
 				"punctuation.terminator.statement.js", //; in js
+				"punctuation.terminator.statement.ts",
 				"punctuation.terminator.statement.cpp", //; in cpp
 				"entity.name.function.definition.special.constructor.cpp", //; in cpp
 				"entity.name.function.definition.special.member.destructor.cpp", //; in cpp
 				"punctuation.terminator.rule.css", //; in css
 				"entity.name.type.namespace.php",
+				"entity.name.type.module.ts",
+				// "entity.name.type.module.ts",
 				"support.other.namespace.php",
 				"punctuation.section.embedded.begin.php",
 				"punctuation.section.embedded.end.php",
 				"entity.name.tag.yaml",
+				"constant.language.import-export-all.ts",
 			],
 			"settings": {
 				"foreground": "#ff0000"
@@ -371,6 +390,7 @@
 				// "punctuation.section.class.begin.python", 
 				"entity.name.type.class.python",
 				"entity.name.type.class.js",
+				"entity.name.type.class.ts",
 				"source.python",
 				"source.html",
 				"source.js",
@@ -381,6 +401,7 @@
 				"variable.other.object.js",
 				"entity.name.type.class.cpp",
 				"entity.name.type.cpp",
+				"entity.name.type.enum.ts",
 				"storage.type.built-in.primitive.cpp", //primitive but like class
 				"support.constant.property-value.css",
 				"support.constant.color.w3c-standard-color-name.css",
@@ -398,7 +419,10 @@
 				"support.class.php",
 				"entity.name.type.class.php",
 				"entity.other.inherited-class.php",
+				"entity.other.inherited-class.ts",
 				"source.yaml",
+				"entity.name.type.interface.ts",
+				"entity.name.type.ts",
 			],
 			"settings": {
 				"foreground": "#4EC9B0",
@@ -418,6 +442,7 @@
 				"string.quoted.double.xml",
 				"string.quoted.double.shell",
 				"string.quoted.single.scss",
+				"string.quoted.single.ts",
 				"string.unquoted.argument.shell",
 			],
 			"settings": {

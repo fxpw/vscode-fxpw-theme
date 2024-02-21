@@ -33,6 +33,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.11
+
+add ts
+
 ### 1.0.10
 
 add shell
