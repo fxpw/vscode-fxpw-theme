@@ -21,17 +21,11 @@ supported files and languages:
 
 ![1702548662281](image/README/1702548662281.png)![1702548725679](image/README/1702548725679.png)![1702548735397](image/README/1702548735397.png)![1702548745168](image/README/1702548745168.png)![1702548753959](image/README/1702548753959.png)![1702551188696](image/README/1702551188696.png)
 
-## Features
+# Features
 
 More supported languages
 
-## Extension Settings
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.mething.
-
-## Release Notes
+# Release Notes
 
 ### 1.0.11
 
