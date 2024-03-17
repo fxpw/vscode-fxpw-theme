@@ -27,6 +27,10 @@ More supported languages
 
 # Release Notes
 
+### 1.1.1
+
+add auto build + browser work
+
 ### 1.0.11
 
 add ts
