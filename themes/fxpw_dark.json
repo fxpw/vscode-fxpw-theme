@@ -361,6 +361,7 @@
 				"support.type.primitive.ts",
 				"support.type.builtin.ts",
 				"storage.type.namespace.ts",
+				"keyword.operator.logical.lua",
 
 			],
 			"settings": {
