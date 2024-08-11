@@ -388,6 +388,7 @@
 				"punctuation.section.embedded.end.php",
 				"entity.name.tag.yaml",
 				"constant.language.import-export-all.ts",
+				"meta.method.declaration.ts",
 			],
 			"settings": {
 				"foreground": "#ff0000"
