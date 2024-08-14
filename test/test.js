@@ -12,7 +12,12 @@ const stringVariable = 'Hello, World!';
 let booleanVariable = true;
 const nullVariable = null;
 const undefinedVariable = undefined;
-const objectVariable = { key: 'value', number: 123 };
+const objectVariable = {
+	key: 'value',
+	number: 123,
+	number1: nullVariable
+};
+let a = objectVariable.key;
 const arrayVariable = [1, 2, 3, 'four', { a: 5 }];
 
 // Определение функции

@@ -320,7 +320,6 @@
 				"constant.language.undefined.ts",
 				"punctuation.separator.comma.js",
 				"punctuation.separator.comma.ts",
-				// "punctuation.accessor.js",
 				"storage.type.modifier.access.public.cpp",
 				"storage.type.modifier.access.control.public.cpp",
 				"storage.type.modifier.access.control.private.cpp",
@@ -362,6 +361,14 @@
 				"support.type.builtin.ts",
 				"storage.type.namespace.ts",
 				"keyword.operator.logical.lua",
+				"meta.directive.custom.blade",
+				"entity.name.function.blade",
+				"punctuation.definition.arguments.begin.bracket.round.php",
+				"punctuation.definition.arguments.end.bracket.round.php",
+				"support.function.construct.begin.blade",
+				"support.function.construct.end.blade",
+				"storage.type.property.ts",
+
 
 			],
 			"settings": {
@@ -432,6 +439,10 @@
 				"source.yaml",
 				"entity.name.type.interface.ts",
 				"entity.name.type.ts",
+				"punctuation.accessor.ts",
+				"punctuation.accessor.js",
+				"punctuation.separator.key-value.js",
+				"punctuation.separator.key-value.ts",
 			],
 			"settings": {
 				"foreground": "#4EC9B0",
@@ -455,6 +466,8 @@
 				"string.quoted.single.scss",
 				"string.quoted.single.ts",
 				"string.unquoted.argument.shell",
+				"string.quoted.single.ts",
+				"string.quoted.double.ts",
 			],
 			"settings": {
 				"foreground": "#ffffff"
