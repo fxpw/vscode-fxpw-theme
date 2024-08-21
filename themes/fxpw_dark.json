@@ -157,6 +157,8 @@
 				"comment.line.scss",
 				"punctuation.definition.comment.ts",
 				"comment.block.documentation.ts",
+				"comment.line.number-sign.yaml",
+				"punctuation.definition.comment.yaml",
 			],
 			"settings": {
 				"foreground": "#317b1e",
@@ -368,6 +370,8 @@
 				"support.function.construct.begin.blade",
 				"support.function.construct.end.blade",
 				"storage.type.property.ts",
+				"punctuation.separator.key-value.mapping.yaml",
+				"punctuation.definition.block.sequence.item.yaml",
 
 
 			],
@@ -468,6 +472,8 @@
 				"string.unquoted.argument.shell",
 				"string.quoted.single.ts",
 				"string.quoted.double.ts",
+				"string.unquoted.plain.out.yaml",
+				"string.unquoted.block.yaml",
 			],
 			"settings": {
 				"foreground": "#ffffff"
