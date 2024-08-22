@@ -246,7 +246,6 @@
 				"variable.object.property.ts",
 				"meta.attribute-selector.scss",
 				"support.constant.color.current.css",
-
 			],
 			"settings": {
 				"fontStyle": "",
@@ -258,7 +257,6 @@
 				"variable.other.property.python",
 				"constant.other.color.rgb-value.hex.css",
 			],
-			
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#2b75ff"
@@ -286,7 +284,6 @@
 				"constant.numeric.float.cpp",
 				"constant.numeric.css",
 				"constant.numeric.integer.shell",
-				
 			],
 			"settings": {
 				"fontStyle": "",
@@ -372,8 +369,6 @@
 				"storage.type.property.ts",
 				"punctuation.separator.key-value.mapping.yaml",
 				"punctuation.definition.block.sequence.item.yaml",
-
-
 			],
 			"settings": {
 				"foreground": "#b950d6",
@@ -447,6 +442,7 @@
 				"punctuation.accessor.js",
 				"punctuation.separator.key-value.js",
 				"punctuation.separator.key-value.ts",
+				"source.github-actions-workflow",
 			],
 			"settings": {
 				"foreground": "#4EC9B0",
@@ -473,6 +469,7 @@
 				"string.quoted.single.ts",
 				"string.quoted.double.ts",
 				"string.unquoted.plain.out.yaml",
+				"string.unquoted.plain.in.yaml",
 				"string.unquoted.block.yaml",
 			],
 			"settings": {
