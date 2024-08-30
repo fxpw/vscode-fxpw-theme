@@ -139,6 +139,7 @@
 			"scope": [
 				"punctuation.definition.comment.python",
 				"comment.line.number-sign.python",
+				"punctuation.definition.comment.js",
 				"comment.line.double-slash.js",
 				"comment.line.double-slash.ts",
 				"comment.line.double-slash.cpp",
