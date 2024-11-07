@@ -182,6 +182,7 @@
 			"scope": [
 				"entity.name.function.python",
 				"entity.name.function.js",
+				"variable.other.readwrite.ts",
 				"entity.name.function.definition.cpp",
 				"entity.name.function.call.cpp",
 				"entity.name.function.member.cpp",
@@ -370,6 +371,7 @@
 				"storage.type.property.ts",
 				"punctuation.separator.key-value.mapping.yaml",
 				"punctuation.definition.block.sequence.item.yaml",
+				"punctuation.attribute-shorthand.event.html.vue",
 			],
 			"settings": {
 				"foreground": "#b950d6",
@@ -511,6 +513,9 @@
 		{ // ->
 			"scope": [
 				"punctuation.separator.annotation",
+				"entity.name.tag.template.html.vue",
+				"entity.name.tag.script.html.vue",
+				"entity.name.tag.style.html.vue",
 			],
 			"settings": {
 				"foreground": "#ff00d4",
@@ -535,6 +540,8 @@
 				"punctuation.definition.string.begin.python",
 				"punctuation.definition.string.end.js",
 				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.begin.html.vue",
+				"punctuation.definition.string.end.html.vue",
 				"punctuation.definition.string.template.begin.js",
 				"punctuation.definition.string.template.end.js",
 				"string.quoted.double.js",
