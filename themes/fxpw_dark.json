@@ -138,11 +138,14 @@
 		{ // comment
 			"scope": [
 				"punctuation.definition.comment.python",
+				"punctuation.definition.comment.toml",
 				"comment.line.number-sign.python",
+				"comment.line.number-sign.toml",
 				"punctuation.definition.comment.js",
 				"comment.line.double-slash.js",
 				"comment.line.double-slash.ts",
 				"comment.line.double-slash.cpp",
+				"comment.line.double-slash.rust",
 				"comment.block.css",
 				"comment.line.double-dash.lua",
 				"comment.block.lua",
@@ -195,6 +198,8 @@
 				"entity.name.function.php",
 				"entity.name.command.shell",
 				"entity.name.function.ts",
+				"entity.name.function.rust",
+				"entity.name.function.macro.rust",
 			],
 			"settings": {
 				"foreground": "#f2e986"
@@ -248,6 +253,7 @@
 				"variable.object.property.ts",
 				"meta.attribute-selector.scss",
 				"support.constant.color.current.css",
+				"support.type.property-name.toml",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -280,12 +286,16 @@
 				"constant.numeric.float",
 				"constant.numeric.dec",
 				"constant.numeric.decimal.js",
+				"constant.numeric.decimal.rust",
+				"constant.numeric.float.rust",
 				"constant.numeric.decimal.php",
 				"constant.numeric.decimal.cpp",
 				"constant.numeric.decimal.ts",
 				"constant.numeric.float.cpp",
 				"constant.numeric.css",
 				"constant.numeric.integer.shell",
+				"constant.numeric.integer.toml",
+				"constant.numeric.decimal.toml",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -361,6 +371,7 @@
 				"support.type.primitive.ts",
 				"support.type.builtin.ts",
 				"storage.type.namespace.ts",
+				"entity.name.namespace.rust",
 				"keyword.operator.logical.lua",
 				"meta.directive.custom.blade",
 				"entity.name.function.blade",
@@ -390,6 +401,8 @@
 				"entity.name.function.definition.special.member.destructor.cpp", //; in cpp
 				"punctuation.terminator.rule.css", //; in css
 				"entity.name.type.namespace.php",
+				"entity.name.type.struct.rust",
+				"entity.name.type.enum.rust",
 				"entity.name.type.module.ts",
 				// "entity.name.type.module.ts",
 				"support.other.namespace.php",
@@ -431,6 +444,7 @@
 				"entity.other.attribute-name.pseudo-class.css",
 				"entity.name.method.lua",
 				"source.ini",
+				"source.rust",
 				"entity.name.function.target.makefile",
 				"support.function.shell.makefile",
 				"support.function.construct.php",
@@ -440,7 +454,9 @@
 				"entity.other.inherited-class.ts",
 				"source.yaml",
 				"entity.name.type.interface.ts",
+				"entity.name.type.numeric.rust",
 				"entity.name.type.ts",
+				"entity.name.type.rust",
 				"punctuation.accessor.ts",
 				"punctuation.accessor.js",
 				"punctuation.separator.key-value.js",
@@ -466,10 +482,12 @@
 				"string.quoted.double.xml",
 				"string.quoted.double.shell",
 				"string.quoted.double.ts",
+				"string.quoted.double.rust",
 				"string.quoted.single.scss",
 				"string.quoted.single.ts",
 				"string.unquoted.argument.shell",
 				"string.quoted.single.ts",
+				"string.quoted.single.basic.line.toml",
 				"string.quoted.double.ts",
 				"string.unquoted.plain.out.yaml",
 				"string.unquoted.plain.in.yaml",
@@ -493,6 +511,7 @@
 		{ // decoratos
 			"scope": [
 				"punctuation.definition.decorator.python",
+				"punctuation.definition.table.inline.toml",
 			],
 			"settings": {
 				"foreground": "#ffe605",

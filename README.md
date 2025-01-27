@@ -27,6 +27,10 @@ More supported languages
 
 # Release Notes
 
+### 1.1.9-1.1.10
+
+add rust support
+
 ### 1.1.1
 
 add auto build + browser work

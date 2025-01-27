@@ -1,0 +1,29 @@
+[package]
+name = "my_rust_project"       # Имя вашего проекта
+version = "0.1.0"               # Версия вашего проекта
+edition = "2021"                # Редакция Rust, которую вы используете
+
+# Описание проекта
+description = "A simple Rust project to demonstrate Cargo.toml structure."
+license = "MIT"                 # Лицензия
+authors = ["Your Name <you@example.com>"]  # Ваши авторы
+
+[dependencies]                  # Зависимости вашего проекта
+serde = { version = "1.0", features = ["derive"] }  # Serde для сериализации и десериализации
+tokio = { version = "1", features = ["full"] }     # Tokio для асинхронного программирования
+
+[dev-dependencies]              # Зависимости для тестирования
+assert_cli = "1.0"              # Для тестирования командной строки
+
+[profile.dev]                   # Профиль для сборок в режиме разработки
+opt-level = 0                   # Уровень оптимизации
+
+[profile.release]               # Профиль для сборок в режиме релиза
+opt-level = 3                   # Уровень оптимизации
+
+[features]                      # Опциональные функции
+default = []                    # Значения по умолчанию для опциональных функций
+async_io = ["tokio/full"]      # Пример опциональной функции для async IO
+
+[workspace]                     # Определение рабочего пространства (если нужно)
+members = ["my_rust_project", "another_crate"]  # Члены рабочего пространства
